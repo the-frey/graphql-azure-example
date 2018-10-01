@@ -1,0 +1,23 @@
+{
+  "name": "azure-gql-example",
+  "version": "1.0.0",
+  "description": "Azure Functions example",
+  "main": "index.js",
+  "keywords": [
+    "azure"
+  ],
+  "devDependencies": {
+    "apollo-server-azure-functions": "^1.4.0",
+    "apollo-server-express": "^2.1.0",
+    "azure-functions-typescript": "0.0.1",
+    "graphql-iso-date": "^3.6.1",
+    "graphql-tools": "^4.0.0"
+  },
+  "dependencies": {
+    "express-graphql": "^0.6.12",
+    "graphql": "^14.0.2"
+  },
+  "scripts": {
+    "graphiql": "node utils/graphiql.js"
+  }
+}
