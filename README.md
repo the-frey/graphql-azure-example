@@ -27,3 +27,14 @@ Then, in a browser, hit:
 
 You can then explore the options available to you. 
 
+If you copy a cURL from GraphiQL it should be executable against your running function:
+
+```
+curl 'http://localhost:7071/api/graphqlEndpoint' -H 'Content-Type: application/json' -H 'Accept: application/json' --data-binary '{"query":"{\n  addressById(id: 1){\n  address1\n}}"}' --compressed
+```
+
+Will return:
+
+```
+{"data":{"addressById":{"address1":"High Street"}}}
+```
